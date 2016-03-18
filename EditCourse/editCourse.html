@@ -1,0 +1,118 @@
+﻿<div ng-controller="editcourseController">
+    <div class="well">
+        <nav>
+            <label>Course Details</label>
+        </nav>
+        <table class="table">
+            <tr>
+                <td>
+                    CourseName
+                </td>
+                <td width="25%">
+                    <input type="text" class="form-control" value="{{coursesList.coursename}}" />
+                </td>
+                <td>
+
+                    CourseCategory 
+                </td>
+                <td>
+                    <input type="text" class="form-control" value="{{coursesList.courseCategory}}" />
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="3">
+                    Description
+                </td>
+                <td rowspan="3">
+                    <textarea style="width:300px;height:150px">{{coursesList.Description}}</textarea>
+                </td>
+                <td>
+                    Credit
+                </td>
+                <td>
+                    <input type="text" class="form-control" value="{{coursesList.CourseCredit}}" />   
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Type
+                </td>
+                <td>
+                    <input type="text" class="form-control" value="{{coursesList.Type}}" />   
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Level
+                </td>
+                <td>
+                    <input type="text" class="form-control" value="{{coursesList.Level}}" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Author
+                </td>
+                <td>
+                    <input type="text" class="form-control" value="{{coursesList.Author}}" />
+                </td>
+                <td>
+                    Course Duration
+                </td>
+                <td>
+                    <input type="text" class="form-control" value="{{coursesList.CourseDuration}}" />
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="3">
+                    Purpose
+                </td>
+                <td rowspan="3">
+                    <textarea style="width:300px">{{coursesList.Purpose}}</textarea>
+                </td>
+                <td>
+                    Tags
+                </td>
+                <td>
+                    <input type="text" class="form-control" value="{{coursesList.Tags}}" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Image
+                </td>
+                <td>
+                    {{coursesList.Image}}
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row">
+        <section>
+            <div class="btn-toolbar"><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#mymodal1" style="float:right">Next</button>
+
+                <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#mymodal" style="float:right">Save As Draft</button>
+
+                <div id="mymodal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                            </div>
+                            <div class="modal-body">
+                                <p>Saved</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+           
+            </div>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,313 @@
+﻿/**************************************************************************************************************************/
+/******************************************Styles for Progress bar and menu strip begins**********************************/
+.wizard {
+    margin: 20px auto;
+    background: #fff;
+}
+
+    .wizard .nav-tabs {
+        position: relative;
+        margin: 40px auto;
+        margin-bottom: 0;
+        border-bottom-color: #e0e0e0;
+    }
+
+    .wizard > div.wizard-inner {
+        position: relative;
+    }
+
+.connecting-line {
+    height: 2px;
+    background: #5bc0de;
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+.wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+    color: #555555;
+    cursor: default;
+    border: 0;
+    border-bottom-color: transparent;
+}
+
+span.round-tab {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    border-radius: 100px;
+    background: #fff;
+    border: 2px solid #5bc0de;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+    span.round-tab i {
+        color: #5bc0de;
+    }
+
+.wizard li.active span.round-tab {
+    background: #fff;
+    border: 2px solid #f3994c;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    z-index: 2;
+}
+
+    .wizard li.active span.round-tab i {
+        color: #f3994c;
+    }
+
+span.round-tab:hover {
+    color: #333;
+    border: 2px solid #333;
+}
+
+.wizard .nav-tabs > li {
+    width: 25%;
+}
+
+.wizard li:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom-color: #5bc0de;
+    transition: 0.1s ease-in-out;
+}
+
+.wizard li.active:after {
+    content: " ";
+    position: absolute;
+    left: 48%;
+    opacity: 1;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 10px solid white;
+    border-bottom-color: white;
+}
+
+.wizard .nav-tabs > li a {
+    width: 70px;
+    height: 70px;
+    margin: 20px auto;
+    border-radius: 100%;
+    padding: 0;
+}
+
+    .wizard .nav-tabs > li a:hover {
+        background: transparent;
+    }
+
+.wizard .tab-pane {
+    position: relative;
+}
+
+.wizard h3 {
+    margin-top: 0;
+}
+
+.progress {
+    height: 7px;
+    border-radius: 0px;
+}
+
+.progress-bar {
+    background-color: #f3994c;
+}
+
+@media( max-width : 585px ) {
+
+    .wizard {
+        width: 90%;
+        height: auto !important;
+    }
+
+    span.round-tab {
+        font-size: 16px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .wizard .nav-tabs > li a {
+        width: 30px;
+        height: 30px;
+        line-height: 50px;
+    }
+
+    .wizard li.active:after {
+        content: " ";
+        position: absolute;
+        left: 35%;
+    }
+
+    .well .well-sm .well_style {
+        background-color: white;
+    }
+}
+/******************************************Styles for Progress bar and menu strip Ends******************************/
+
+/*******************************************************************************************************************/
+
+/*******************************************************************************************************************/
+/*********************************************Add new Learning Path style begins********************************************/
+center table td {
+    text-align: left;
+    padding: 8px;
+}
+
+.button1 {
+    color: white;
+    background-color: #4CAF50;
+    font-size: 16px;
+    border: #4CAF50;
+}
+
+.button2 {
+    color: white;
+    font-size: 16px;
+    background-color: #286090;
+    border: #286090;
+}
+
+
+.cmn-toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
+
+    .cmn-toggle + label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        user-select: none;
+    }
+
+input.cmn-toggle-round + label {
+    padding: 2px;
+    width: 40px;
+    height: 20px;
+    background-color: #dddddd;
+    border-radius: 60px;
+}
+
+    input.cmn-toggle-round + label:before,
+    input.cmn-toggle-round + label:after {
+        display: block;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        bottom: 1px;
+        content: "";
+    }
+
+    input.cmn-toggle-round + label:before {
+        right: 1px;
+        background-color: #ff0000;
+        border-radius: 60px;
+        transition: background 0.4s;
+    }
+
+    input.cmn-toggle-round + label:after {
+        width: 20px;
+        background-color: #fff;
+        border-radius: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        transition: margin 0.4s;
+    }
+
+input.cmn-toggle-round:checked + label:before {
+    background-color: #8ce196;
+}
+
+input.cmn-toggle-round:checked + label:after {
+    margin-left: 20px;
+}
+
+/*********************************************Add new Learning Path style ends********************************************/
+/**********************************************************************************************************************/
+/*********************************************Parameters  page style begins********************************************/
+
+#para .well {
+    font-size: 10px;
+    height: 150px;
+    padding: 0px;
+}
+
+/*********************************************Parameters  page style ends************************************************/
+/************************************************************************************************************************/
+
+
+/************************************************************************************************************************/
+/*********************************************Create course page style begins********************************************/
+.btnsearch {
+    cursor: pointer;
+}
+
+#coursesinmypath {
+    height: 100%;
+}
+
+#displaysearchcontent table tr input {
+    background-color: white;
+    border: 0.2px solid grey;
+    color: grey;
+    height: 28px;
+}
+
+#coursesinmypath table tr input {
+    background-color: white;
+    border: 0.2px solid grey;
+    color: grey;
+    height: 28px;
+}
+/*********************************************Create course page style ends********************************************/
+
+/*******************************************************************************************************************/
+/*********************************************approval page style begins********************************************/
+#approvaldiv textarea {
+    width: 300px;
+    min-width: 300px;
+    max-width: 400px;
+    height: 100px;
+    min-height: 100px;
+    max-height: 200px;
+}
+
+#approvaldiv .container {
+    vertical-align: top;
+    width: 75%;
+}
+
+#approvaldiv table {
+    margin: 0 auto;
+    border-spacing: 15px;
+    border-collapse: separate;
+}
+
+    #approvaldiv table tr {
+        //border-spacing:5em;
+        padding-left: 10rem;
+        padding-bottom: 2rem;
+        vertical-align: top;
+    }
+
+#approvaldiv td.heading {
+    text-align: right;
+}
+/*********************************************approval page style ends**********************************************/
